@@ -1,3 +1,6 @@
+Live: https://face-square.herokuapp.com/
+Backend Repository: https://github.com/rahulzura/face-detector-backend
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

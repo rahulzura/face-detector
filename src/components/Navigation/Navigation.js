@@ -7,7 +7,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       <nav className="nav-container sticky">
         <ul className="nav">
           <li className="nav__item">
-            <a href="" onClick={() => onRouteChange('signout')} aria-label="Sign out">Sign out</a>
+            <a href="/" onClick={() => onRouteChange('signout')} aria-label="Sign out">Sign out</a>
           </li>
         </ul>
       </nav>
@@ -17,13 +17,13 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       <nav className="nav-container sticky">
         <ul className="nav">
           <li className="nav__item">
-            <a href="" onClick={(event) => {
+            <a href="/" onClick={(event) => {
               event.preventDefault();
               onRouteChange('signin');
               }} aria-label="Sign in">Sign In</a>
           </li>
           <li className="nav__item">
-            <a href="" onClick={(event) => {
+            <a href="/" onClick={(event) => {
               event.preventDefault();
               onRouteChange('register')
               }} aria-label="Register">Register</a>

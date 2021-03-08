@@ -30,7 +30,6 @@ class SignIn extends React.Component {
     });
 
     const user = await res.json();
-    console.log(user)
     if (user.email) {
       console.log("logged in")
       this.props.loadUser(user);
@@ -42,7 +41,6 @@ class SignIn extends React.Component {
   }
 
   render() {
-    const { onRouteChange } = this.props;
     return (
       <form className="form-standard">
         <div className="input-group">

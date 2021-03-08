@@ -5,21 +5,19 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
     <div>
       <p className=''>
-        {'This magic brain will detect faces in the pictures whose url you paste below. Give it a try!'}
+        {'Paste a url of an image to detect all the human faces in it.'}
       </p>
-      <div className=''>
-        <div className=''>
+      <div className='input-group image-link-form-group'>
           <input 
             className='' 
             type='text' 
             onChange={onInputChange}
           />
           <button 
-            className=''
+            className='image-link-form-btn'
             onClick={onButtonSubmit}
           >Detect</button>
         </div>
-      </div>
     </div>
   );
 }

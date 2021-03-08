@@ -44,10 +44,8 @@ class SignIn extends React.Component {
   render() {
     const { onRouteChange } = this.props;
     return (
-    <main>
-      <form>
-        <legend>Sign In</legend>
-        <div>
+      <form className="form-standard">
+        <div className="input-group">
           <label htmlFor="email-address">Email</label>
           <input 
             onChange={this.onEmailChange} 
@@ -56,7 +54,7 @@ class SignIn extends React.Component {
             id="email-address" 
           />
         </div>
-        <div>
+        <div className="input-group">
           <label htmlFor="password">Password</label>
           <input 
             onChange={this.onPasswordChange} 
@@ -67,14 +65,13 @@ class SignIn extends React.Component {
         </div>
         <div>
           <input 
+            className="form-submit-btn"
             onClick={this.onSubmitSignIn}
             type="submit" 
             value="Sign in" 
           />
         </div>
       </form>
-    </main>
-
     );
   }
 }

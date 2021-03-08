@@ -6,6 +6,7 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import './App.css';
+import './form.css';
 
 import {apiUrl} from './constants';
 
@@ -125,8 +126,9 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, boxes } = this.state;
     return (
       <div className="App">
+      <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
+      <main className="content">
       <h3>{this.state.message}</h3>
-        <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home' 
           ? <div> 
               <Logo />
@@ -140,6 +142,7 @@ class App extends Component {
               : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
             )
         }
+        </main>
       </div>
     );
   }

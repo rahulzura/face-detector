@@ -17,3 +17,14 @@
     background-color: #232927;
     background-size: 100px 100px;
 }
+
+.image-link-form-btn {
+  background-color: #222;
+  border-radius: 0;
+  font-size: 1em;
+  color: #ddd;
+}
+
+.image-link-form-group {
+  padding: 0 2rem;
+}

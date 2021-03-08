@@ -45,11 +45,10 @@ class Register extends React.Component {
 
   render() {
     return (
-    <main>
-      <form>
-        <legend >Register</legend>
-          <div>
-            <label  htmlFor="name">Name</label>
+    <>
+      <form className="form-standard">
+        <div className="input-group">
+            <label htmlFor="name">Name</label>
             <input 
               type="text" 
               name="name"  
@@ -57,8 +56,8 @@ class Register extends React.Component {
               onChange={this.onNameChange}
             />
         </div>
-        <div>
-            <label  htmlFor="email-address">Email</label>
+        <div className="input-group">
+            <label htmlFor="email-address">Email</label>
             <input 
                 
               type="email" 
@@ -67,10 +66,9 @@ class Register extends React.Component {
               onChange={this.onEmailChange}
             />
           </div>
-          <div>
-            <label  htmlFor="password">Password</label>
-            <input 
-                
+          <div className="input-group">
+            <label htmlFor="password">Password</label>
+            <input     
               type="password" 
               name="password"  
               id="password" 
@@ -79,13 +77,14 @@ class Register extends React.Component {
           </div>
           <div>
           <input 
+            className="form-submit-btn"
             onClick={this.onSubmitSignIn}
             type="submit" 
             value="Register" 
           />
         </div>
       </form>
-    </main>
+    </>
     );
   }
 }

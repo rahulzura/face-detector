@@ -1,6 +1,6 @@
 .form-standard {
-  background-color: #888;
-  border: 2px dashed #666;
+  background-color: #ccc;
+  border: 2px dashed #bbb;
   display: flex;
   flex-flow: column nowrap;
   height: fit-content;

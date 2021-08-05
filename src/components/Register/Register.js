@@ -36,9 +36,9 @@ class Register extends React.Component {
       })
     })
 
-    const user = await res.json();
-    if (user.id) {
-      this.props.loadUser(user);
+    const resData = await res.json();
+    if (resData.status === 'ok') {
+      this.props.loadUser(resData.user);
       this.props.onRouteChange('home');
     }
   }
